@@ -23,6 +23,6 @@ function output = dirname(theFile)
 %   Department of Physics
 %   University of Aveiro, Portugal
 
-d = sys.path.realpath(theFile);
+d = os.path.realpath(theFile);
 [path,name,ext]=fileparts(d);
 output = path;

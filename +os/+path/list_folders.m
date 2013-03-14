@@ -28,7 +28,7 @@ function [folders,n] = list_folders(folders,sub)
 %   Department of Physics
 %   University of Aveiro, Portugal
 
-import sys.path.list_folders;
+import os.path.list_folders;
 
 
 if nargin < 2

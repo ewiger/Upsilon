@@ -19,3 +19,5 @@
 # MATLAB temporary files
 *.m~
 
+# vim temporary files
+*.swp
