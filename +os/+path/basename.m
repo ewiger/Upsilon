@@ -24,6 +24,6 @@ function output = basename(theFile)
 %   Department of Physics
 %   University of Aveiro, Portugal
 
-d = os.path.realpath(theFile);
-[path,name,ext]=fileparts(d);
+[path,name,ext]=fileparts(theFile);
 output = [name,ext];
+
