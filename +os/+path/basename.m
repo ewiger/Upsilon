@@ -24,6 +24,9 @@ function output = basename(theFile)
 %   Department of Physics
 %   University of Aveiro, Portugal
 
+if strcmp(theFile(end),'/') || strcmp(theFile(end),'\')
+    theFile = theFile(1:end-1);
+end
 [path,name,ext]=fileparts(theFile);
 output = [name,ext];
 

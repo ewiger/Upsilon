@@ -23,6 +23,8 @@ function output = dirname(theFile)
 %   Department of Physics
 %   University of Aveiro, Portugal
 
-d = os.path.realpath(theFile);
-[path,name,ext]=fileparts(d);
+if strcmp(theFile(end),'/') || strcmp(theFile(end),'\')
+    theFile = theFile(1:end-1);
+end
+[path,name,ext]=fileparts(theFile);
 output = path;
