@@ -123,7 +123,8 @@ for i=1:length(dirs)
 
     try
       base_name = basename(dirs{i});
-    catch
+    catch exception
+      warning(exception.message);
       base_name = dirs{i};
     end
     fprintf(fid,'%%  %s, %s\n',base_name,desc);

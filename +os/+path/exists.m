@@ -20,6 +20,7 @@ function found = exists(thePath)
 %   See also DIRNAME, BASENAME
 try
     found = fileattrib(thePath) ~= 0;
-catch
+catch exception
+    warning(exception.message);
     found = 0;
 end
